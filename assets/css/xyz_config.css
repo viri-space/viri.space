@@ -11,11 +11,11 @@
   --primary-color: green;
   --secondary-color: limegreen;
   --tertiary-color: lime;
-  --background-color: #111;
+  --background-color: black;
 
   /* Border */
   --border-type: solid;
-  --border-thickness: 1px;
+  --border-thickness: 2px;
   --border-radius: 0px;
   --border-color: limegreen;
 
