@@ -99,6 +99,15 @@
 #vaynwork:hover {
   color: white;
 }
+.vbg {
+  height: 100vh;
+  width: 5076px;
+  z-index: -1;
+  overflow: hidden;
+  background: repeating-linear-gradient( 45deg,var(--bg-y),var(--bg-y) 40px,var(--bg-b) 40px,var(--bg-b) 80px,var(--bg-p) 80px,var(--bg-p) 120px ) repeat-x;
+  animation: slide 60s linear infinite;
+  position: absolute;
+}
 
 html {
   background: url("/assets/img/bg.jpg") center;
