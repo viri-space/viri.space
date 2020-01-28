@@ -108,7 +108,3 @@
   animation: slide 60s linear infinite;
   position: absolute;
 }
-
-html {
-  background: url("/assets/img/bg.jpg") center;
-}
