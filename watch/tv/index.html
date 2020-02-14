@@ -30,8 +30,15 @@
 
 <div class="xyz__main">
 <div class="border">
-  <input type="text" class="xyz" id="filterTitle" onkeyup="filterTable()" placeholder="Title">
-  <input type="text" class="xyz" id="filterFormat" onkeyup="filterTable()" placeholder="Format">
+  <input type="text" class="xyz" id="filterTitle" onkeyup="filterTitle()" placeholder="Title">
+
+  <select id="filterStatus">
+    <option value="💚">💚</option>
+    <option value="✔️">✔️</option>
+    <option value="❌">❌</option>
+  </select>
+
+  <input type="text" class="xyz" id="filterFormat" onkeyup="filterFormat()" placeholder="Format">
 </div>
 
   <div style="overflow-x:auto;">
@@ -41,7 +48,7 @@
     <thead>
       <tr>
         <th onclick="sortTable(0)">Title</th>
-        <th onclick="sortTable(1)">Finished</th>
+        <th onclick="sortTable(1)">Status</th>
         <th onclick="sortTable(2)">Format</th>
       </tr>
     </thead>

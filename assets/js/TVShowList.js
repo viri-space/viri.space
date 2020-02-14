@@ -72,7 +72,7 @@ function sortTable(n) {
 }
 
 // Filter Title
-function filterTable() {
+function filterTitle() {
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("filterTitle");
@@ -93,8 +93,9 @@ function filterTable() {
     }
   }
 }
+
 // Filter Format
-function filterTable() {
+function filterFormat() {
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("filterFormat");
@@ -105,6 +106,29 @@ function filterTable() {
   // Loop through all table rows, and hide those who don't match the search query
   for (i = 0; i < tr.length; i++) {
     td = tr[i].getElementsByTagName("td")[2];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+// Filter Status
+function filterStatus() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("filterStatus");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("TVShowTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
     if (td) {
       txtValue = td.textContent || td.innerText;
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
