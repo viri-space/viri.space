@@ -77,7 +77,7 @@ function filterTable() {
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("filterInput");
   filter = input.value.toUpperCase();
-  table = document.getElementById("projectTable");
+  table = document.getElementById("TVShowTable");
   tr = table.getElementsByTagName("tr");
 
   // Loop through all table rows, and hide those who don't match the search query
