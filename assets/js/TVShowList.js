@@ -15,6 +15,10 @@ window.onload = $.getJSON("https://spreadsheets.google.com/feeds/list/1Nnm95MR-H
   }
 })
 
+//Stats
+var numberOfShows = document.getElementById("TVShowTable").rows[0].cells.length
+document.getElementById("totalShows").innerHTML = numberOfShows
+
 // Sort Table
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
