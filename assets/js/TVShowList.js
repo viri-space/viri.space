@@ -120,7 +120,6 @@ function filterFormat() {
     }
   }
 }
-
 // Filter Status
 function filterStatus() {
   // Declare variables
