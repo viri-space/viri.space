@@ -15,11 +15,6 @@ window.onload = $.getJSON("https://spreadsheets.google.com/feeds/list/1Nnm95MR-H
   }
 })
 
-$(document).ready(function() {
-    $('#TVShowTable').DataTable();
-} );
-
-
 // Sort Table
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
