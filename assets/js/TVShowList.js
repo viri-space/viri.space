@@ -15,9 +15,10 @@ window.onload = $.getJSON("https://spreadsheets.google.com/feeds/list/1Nnm95MR-H
   }
 })
 
-//Stats
-var numberOfShows = document.getElementById("TVShowTable").rows.length;
-document.getElementById("totalShows").innerHTML = numberOfShows
+$(document).ready(function() {
+    $('#TVShowTable').DataTable();
+} );
+
 
 // Sort Table
 function sortTable(n) {
@@ -120,6 +121,7 @@ function filterFormat() {
     }
   }
 }
+
 // Filter Status
 function filterStatus() {
   // Declare variables
