@@ -8,22 +8,22 @@
    *  Main Theme  *
    ****************/
 
-  --primary-color: #7e7e7e;
+  --primary-color: green;
   --secondary-color: limegreen;
   --tertiary-color: lime;
   --background-color: #111;
 
   /* Border */
-  --border-type: solid;
-  --border-thickness: 2px;
+  --border-type: double;
+  --border-thickness: 4px;
   --border-radius: 0px;
-  --border-color: black;
+  --border-color: lime;
 
   /***********
    *  Sizes  *
    ***********/
 
-  --max-width: 1300px;
+  --max-width: 900px;
   --margin-width: 900px;
 
   /***********
