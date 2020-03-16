@@ -115,6 +115,12 @@
 .space .btn {
   color: limegreen;
 }
+.buttonlist {
+  max-width: 500px;
+}
+.buttonlist h3 {
+  width: 100%
+}
 
 #vaynwork {
   color: grey;
