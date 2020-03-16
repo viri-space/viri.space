@@ -108,6 +108,7 @@
   margin: 0;
 }
 .space .speech {
+  color: limegreen;
   max-width: 500px;
   width: 95%;
 }
