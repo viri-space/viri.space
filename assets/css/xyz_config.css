@@ -118,6 +118,8 @@
 .buttonlist {
   max-width: 500px;
   width: 90%;
+  display: grid;
+  text-align: center;
 }
 
 .buttonlist h3 a {
