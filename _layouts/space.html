@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
+
+{% include head.html %}
+
+<body class="xyz">
+
+<div class="space">
+  <p class="title">{{ page.title }}</p>
+  <p class="speech border">{{ content }}</p>
+</div>
+
+<script>
+  var titles = ['watch your head', 'ok', 'stay hydrated']
+  var title = titles[Math.floor(Math.random() * titles.length)] // pick random item
+  document.title = title
+</script>
+
+</body>
+
+</html>
