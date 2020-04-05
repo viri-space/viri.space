@@ -126,6 +126,21 @@
   color: limegreen;
 }
 
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid green;
+}
+.card-contents {
+  transform: rotate(90deg);
+}
+
 #vaynwork {
   color: grey;
 }

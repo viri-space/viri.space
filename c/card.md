@@ -1,6 +1,6 @@
 ---
 title: my card
-layout: space
+layout: card
 permalink: /card
 ---
 
