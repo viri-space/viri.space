@@ -139,6 +139,7 @@
 }
 .card-contents {
   transform: rotate(90deg);
+  color: lime;
 }
 
 #vaynwork {
