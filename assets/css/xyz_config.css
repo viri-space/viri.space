@@ -121,9 +121,10 @@
   display: grid;
   text-align: center;
 }
-
-.buttonlist h3 a {
+.buttonlist a {
   color: limegreen;
+  width: 20px;
+  height: 20px;
 }
 
 .card {
