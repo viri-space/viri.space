@@ -118,13 +118,18 @@
 .buttonlist {
   max-width: 500px;
   width: 90%;
-  display: grid;
+  display: block;
   text-align: center;
 }
 .buttonlist a {
   color: limegreen;
   width: 20px;
   height: 20px;
+  border: 3px double;
+  display: inline-block;
+  font-size: 10px;
+  margin: 22px 20px;
+  transform: scale(2.5);
 }
 
 .card {
