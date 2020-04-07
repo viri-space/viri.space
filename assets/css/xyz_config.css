@@ -150,6 +150,10 @@
 }
 .card-contents img {
   float: left;
+  width: 150px;
+  margin: 20px;
+  border: 2px solid;
+  padding: 10px;
 }
 .card-contents h1,.card-contents h5 {
   margin: 0;
