@@ -132,10 +132,11 @@
   transform: scale(2.5);
 }
 
+/* Card CSS */
 .card {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 90%;
   background: black;
   display: flex;
   flex-direction: column;
@@ -146,6 +147,12 @@
 .card-contents {
   transform: rotate(90deg);
   color: lime;
+}
+.card-contents img {
+  float: left;
+}
+.card-contents h1,.card-contents h5 {
+  margin: 0;
 }
 
 #vaynwork {
