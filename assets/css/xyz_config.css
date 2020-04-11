@@ -104,6 +104,7 @@
   align-items: center;
 }
 .space img {
+  filter: saturate(1.5);
   border: var(--border-thickness) var(--border-type) var(--border-color);
 }
 .space .title {
