@@ -103,6 +103,9 @@
   justify-content: center;
   align-items: center;
 }
+.space img {
+  border: var(--border-thickness) var(--border-type) var(--border-color);
+}
 .space .title {
   color: limegreen;
   margin: 0;
