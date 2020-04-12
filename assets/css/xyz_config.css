@@ -135,6 +135,9 @@
   margin: 22px 20px;
   transform: scale(2.5);
 }
+.buttonlist a:hover {
+  transform: scale(2);
+}
 
 /* Card CSS */
 .card {
