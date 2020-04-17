@@ -11,7 +11,8 @@
   --primary-color: green;
   --secondary-color: limegreen;
   --tertiary-color: lime;
-  --background-color: #111;
+  --background-color: black;
+  --background-border-color: black;
 
   /* Border */
   --border-type: double;
