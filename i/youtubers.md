@@ -14,6 +14,13 @@ permalink: /youtubers
 
 [Game Maker's Toolkit](https://www.youtube.com/user/McBacon1337){: .h-link}
 
+## Mysteries
+
+[LEMMINO](https://www.youtube.com/user/Top10Memes){: .h-link}
+
+[Barely Sociable](https://www.youtube.com/channel/UC9PIn6-XuRKZ5HmYeu46AIw){: .h-link}
+
+[Internt Historian](https://www.youtube.com/channel/UCR1D15p_vdP3HkrH8wgjQRw){: .h-link}
 
 ## Educational
 
