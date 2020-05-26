@@ -1,0 +1,63 @@
+--- title: tv watchlist layout: default permalink: /tv ---
+<!DOCTYPE html>
+<script src="https://static.vaynwork.com/xyz/JS/xyz.js"></script>
+<link rel="stylesheet" href="https://static.vaynwork.com/xyz/CSS/xyz.css">
+<link rel="stylesheet" href="/assets/css/xyz_config.css">
+<script>
+  pageName = "TV Shows"
+  siteName = "viri.space"
+  layout = "default"
+</script>
+
+<html class="no-js" lang="en">
+  <body class="xyz">
+
+    <main>
+      <div class="obj bdr">
+
+        <button onclick="goBack()">Back</button>
+
+        <select class="xyz" id="filterStatus" onchange="filterStatus()">
+          <option value=""></option>
+          <option value="💚">💚</option>
+          <option value="✔️">✔️</option>
+          <option value="❌">❌</option>
+        </select>
+
+        <select class="xyz" id="filterFormat" onchange="filterFormat()">
+          <option value=""></option>
+          <option value="Live Action">Live Action</option>
+          <option value="Anime">Anime</option>
+          <option value="Cartoon">Cartoon</option>
+        </select>
+
+        <input type="text" class="xyz" id="filterTitle" onkeyup="filterTitle()" placeholder="Title">
+
+      </div>
+
+      <div style="overflow-x:auto;">
+        <!-- Table -->
+        <table class="xyz" id="TVShowTable">
+
+          <!-- Table head -->
+          <thead>
+            <tr>
+              <th onclick="sortTable(0)">Title</th>
+              <th onclick="sortTable(1)">Status</th>
+              <th onclick="sortTable(2)">Format</th>
+            </tr>
+          </thead>
+
+          <!-- Table body -->
+          <tbody id="projects"></tbody>
+
+        </table>
+      </div>
+
+      <script src="/assets/js/TVShowList.js"></script>
+    </main>
+
+  </body>
+</html>
+
+<body class="xyz"></body>
