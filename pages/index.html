@@ -18,25 +18,25 @@ permalink: /tv
 
     <main>
       <div class="obj bdr">
+        <div class="group-r">
 
-        <button onclick="goBack()">Back</button>
+          <select class="xyz" id="filterStatus" onchange="filterStatus()">
+            <option value=""></option>
+            <option value="💚">💚</option>
+            <option value="✔️">✔️</option>
+            <option value="❌">❌</option>
+          </select>
 
-        <select class="xyz" id="filterStatus" onchange="filterStatus()">
-          <option value=""></option>
-          <option value="💚">💚</option>
-          <option value="✔️">✔️</option>
-          <option value="❌">❌</option>
-        </select>
+          <select class="xyz" id="filterFormat" onchange="filterFormat()">
+            <option value=""></option>
+            <option value="Live Action">Live Action</option>
+            <option value="Anime">Anime</option>
+            <option value="Cartoon">Cartoon</option>
+          </select>
 
-        <select class="xyz" id="filterFormat" onchange="filterFormat()">
-          <option value=""></option>
-          <option value="Live Action">Live Action</option>
-          <option value="Anime">Anime</option>
-          <option value="Cartoon">Cartoon</option>
-        </select>
+          <input type="text" class="xyz" id="filterTitle" onkeyup="filterTitle()" placeholder="Title">
 
-        <input type="text" class="xyz" id="filterTitle" onkeyup="filterTitle()" placeholder="Title">
-
+        </div>
       </div>
 
       <div style="overflow-x:auto;">
