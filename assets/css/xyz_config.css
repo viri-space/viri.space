@@ -13,6 +13,7 @@
   --tertiary-color: lime;
   --background-color: black;
   --background-border-color: black;
+  --border-bg-color: black;
 
   /* Border */
   --border-type: double;
