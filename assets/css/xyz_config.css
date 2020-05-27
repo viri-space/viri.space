@@ -106,7 +106,7 @@
   filter: saturate(1.5);
   border: var(--border-thickness) var(--border-type) var(--border-color);
 }
-.space .title {
+.vstitle {
   color: limegreen;
   margin: 0;
 }
