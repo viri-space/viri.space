@@ -109,6 +109,11 @@
 .vstitle {
   color: limegreen;
   margin: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 .space .speech {
   color: limegreen;
@@ -120,7 +125,6 @@
 }
 .buttonlist {
   max-width: 500px;
-  width: 90%;
   display: flex;
   justify-content: center;
   text-align: center;
