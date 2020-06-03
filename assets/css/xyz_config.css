@@ -188,6 +188,7 @@ html {
 }
 
 .gunmetal {
+  --background-color: #2A3439;
   --background-border-color: #2A3439;
   --border-bg-color: #2A3439;
 }
