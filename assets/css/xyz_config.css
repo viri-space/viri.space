@@ -187,8 +187,14 @@ html {
   font-size: 150%;
 }
 
+/* Gunmetal Page */
 .gunmetal {
   --background-color: #2A3439;
   --background-border-color: #2A3439;
   --border-bg-color: #2A3439;
+}
+.gunmetal-text {
+  color: #AAA9AD;
+  font-size: 2em;
+  font-family: monospace;
 }
