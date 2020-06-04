@@ -192,6 +192,7 @@ html {
   --background-color: #2A3439;
   --background-border-color: #2A3439;
   --border-bg-color: #2A3439;
+  background: #2A3439;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
