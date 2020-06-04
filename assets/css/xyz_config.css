@@ -193,8 +193,10 @@ html {
   --background-border-color: #2A3439;
   --border-bg-color: #2A3439;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 .gunmetal-text {
   color: #AAA9AD;
   font-size: 2em;
-  font-family: monospace;
+  font-family: 'Nova Square', cursive;
 }
