@@ -44,6 +44,8 @@
 /***************
  *  Font-Face  *
  ***************/
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 @font-face {
   font-family: 'pcSenior';
   src:
@@ -195,9 +197,9 @@ html {
   background: #2A3439;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 .gunmetal-text {
   color: #AAA9AD;
   font-size: 2em;
-  font-family: 'Nova Square', cursive;
+  font-family: 'Nova Square';
 }
