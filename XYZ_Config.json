@@ -1,0 +1,12 @@
+{
+  "default": {
+    "siteName": "viri.space",
+    "siteDescription": "a personal site created by viri",
+    "siteConfig": "/",
+    "siteFiles": "assets",
+    "siteTheme": ""
+  },
+  "custom": {
+    "project_count": 6
+  }
+}
