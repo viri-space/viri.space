@@ -1,0 +1,8 @@
+{
+  "name": "viri.space",
+  "description": "a personal site created by viri",
+  "config": "/",
+  "files": "assets",
+  "theme": "hacker",
+  "project_count": 6
+}
