@@ -245,6 +245,13 @@
   color: white;
 }
 
+#space {
+  position: absolute;
+	top: 0;
+	left: 0;
+  background: #000000;
+}
+
 html {
   background: black;
   font-size: 150%;
