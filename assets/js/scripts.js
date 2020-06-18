@@ -18,117 +18,98 @@
 // }
 
 // Stars Background
-var canvas;
-var context;
-var screenH;
-var screenW;
-var stars = [];
-var fps = 50;
-var numStars = 2000;
+const canvas = document.getElementById("canvas");
+ const c = canvas.getContext("2d");
 
-$('document').ready(function() {
+ let w;
+ let h;
 
-  // Calculate the screen size
-	screenH = $(window).height();
-	screenW = $(window).width();
+ const setCanvasExtents = () => {
+   w = document.body.clientWidth;
+   h = document.body.clientHeight;
+   canvas.width = w;
+   canvas.height = h;
+ };
 
-	// Get the canvas
-	canvas = $('#space');
+ setCanvasExtents();
 
-	// Fill out the canvas
-	canvas.attr('height', screenH);
-	canvas.attr('width', screenW);
-	context = canvas[0].getContext('2d');
+ window.onresize = () => {
+   setCanvasExtents();
+ };
 
-	// Create all the stars
-	for(var i = 0; i < numStars; i++) {
-		var x = Math.round(Math.random() * screenW);
-		var y = Math.round(Math.random() * screenH);
-		var length = 1 + Math.random() * 2;
-		var opacity = Math.random();
+ const makeStars = count => {
+   const out = [];
+   for (let i = 0; i < count; i++) {
+     const s = {
+       x: Math.random() * 1600 - 800,
+       y: Math.random() * 900 - 450,
+       z: Math.random() * 1000
+     };
+     out.push(s);
+   }
+   return out;
+ };
 
-		// Create a new star and draw
-		var star = new Star(x, y, length, opacity);
+ let stars = makeStars(10000);
 
-		// Add the the stars array
-		stars.push(star);
-	}
+ const clear = () => {
+   c.fillStyle = "black";
+   c.fillRect(0, 0, canvas.width, canvas.height);
+ };
 
-	setInterval(animate, 1000 / fps);
-});
+ const putPixel = (x, y, brightness) => {
+   const intensity = brightness * 255;
+   const rgb = "rgb(" + intensity + "," + intensity + "," + intensity + ")";
+   c.fillStyle = rgb;
+   c.fillRect(x, y, 1, 1);
+ };
 
-/**
- * Animate the canvas
- */
-function animate() {
-	context.clearRect(0, 0, screenW, screenH);
-	$.each(stars, function() {
-		this.draw(context);
-	})
-}
+ const moveStars = distance => {
+   const count = stars.length;
+   for (var i = 0; i < count; i++) {
+     const s = stars[i];
+     s.z -= distance;
+     while (s.z <= 1) {
+       s.z += 1000;
+     }
+   }
+ };
 
-/**
- * Star
- *
- * @param int x
- * @param int y
- * @param int length
- * @param opacity
- */
-function Star(x, y, length, opacity) {
-	this.x = parseInt(x);
-	this.y = parseInt(y);
-	this.length = parseInt(length);
-	this.opacity = opacity;
-	this.factor = 1;
-	this.increment = Math.random() * .03;
-}
+ let prevTime;
+ const init = time => {
+   prevTime = time;
+   requestAnimationFrame(tick);
+ };
 
-/**
- * Draw a star
- *
- * This function draws a start.
- * You need to give the contaxt as a parameter
- *
- * @param context
- */
-Star.prototype.draw = function() {
-	context.rotate((Math.PI * 1 / 10));
+ const tick = time => {
+   let elapsed = time - prevTime;
+   prevTime = time;
 
-	// Save the context
-	context.save();
+   moveStars(elapsed * 0.1);
 
-	// move into the middle of the canvas, just to make room
-	context.translate(this.x, this.y);
+   clear();
 
-	// Change the opacity
-	if(this.opacity > 1) {
-		this.factor = -1;
-	}
-	else if(this.opacity <= 0) {
-		this.factor = 1;
+   const cx = w / 2;
+   const cy = h / 2;
 
-		this.x = Math.round(Math.random() * screenW);
-		this.y = Math.round(Math.random() * screenH);
-	}
+   const count = stars.length;
+   for (var i = 0; i < count; i++) {
+     const star = stars[i];
 
-	this.opacity += this.increment * this.factor;
+     const x = cx + star.x / (star.z * 0.001);
+     const y = cy + star.y / (star.z * 0.001);
 
-	context.beginPath()
-	for (var i = 5; i--;) {
-		context.lineTo(0, this.length);
-		context.translate(0, this.length);
-		context.rotate((Math.PI * 2 / 10));
-		context.lineTo(0, - this.length);
-		context.translate(0, - this.length);
-		context.rotate(-(Math.PI * 6 / 10));
-	}
-	context.lineTo(0, this.length);
-	context.closePath();
-	context.fillStyle = "rgba(255, 255, 200, " + this.opacity + ")";
-	context.shadowBlur = 5;
-	context.shadowColor = '#ffff33';
-	context.fill();
+     if (x < 0 || x >= w || y < 0 || y >= h) {
+       continue;
+     }
 
-	context.restore();
-}
+     const d = star.z / 1000.0;
+     const b = 1 - d * d;
+
+     putPixel(x, y, b);
+   }
+
+   requestAnimationFrame(tick);
+ };
+
+ requestAnimationFrame(init);
