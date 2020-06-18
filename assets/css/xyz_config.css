@@ -110,7 +110,7 @@
 }
 .vstitle {
   color: limegreen;
-  margin: 0;
+  margin: 0 10px;
   user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -139,7 +139,7 @@
   border: 3px double;
   display: inline-block;
   font-size: 20px;
-  margin: 5px;
+  margin: 0 5px;
   background: black;
   transform: scale(1);
   transition: transform .2s;
