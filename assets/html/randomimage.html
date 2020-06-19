@@ -1,1 +1,7 @@
-<img width="350px" src="https://picsum.photos/350" alt="image">
+<img id="rimage" width="350px" src="https://picsum.photos/350" alt="image">
+
+<script>
+  var classes = ['1', '2', '3'];
+  document.querySelector('#rimage').removeClass();
+  document.querySelector('#rimage').addClass(function(){ return classes[Math.floor(Math.random() * classes.length)]; });
+</script>
