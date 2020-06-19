@@ -238,11 +238,19 @@
   margin: 0;
 }
 
+/* Links */
 #vaynwork {
   color: grey;
 }
 #vaynwork:hover {
   color: white;
+}
+
+#twitter {
+  color: #089;
+}
+#twitter:hover {
+  color: #ffffff;
 }
 
 #canvas {
