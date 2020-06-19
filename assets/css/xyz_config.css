@@ -262,7 +262,17 @@ html {
   background: black;
   font-size: 150%;
 }
-
+html.hacker {
+  animation: hackerFadeIn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes hackerFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Random Image Effects */
 
 .image-invert {
