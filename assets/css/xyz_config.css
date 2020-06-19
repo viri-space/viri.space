@@ -279,7 +279,7 @@ html {
   font-size: 150%;
 }
 html.hacker body {
-  animation: hackerFadeIn  2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: hackerFadeIn  1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 @keyframes hackerFadeIn {
   0% {
