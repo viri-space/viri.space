@@ -260,6 +260,21 @@ html {
   font-size: 150%;
 }
 
+/* Random Image Effects */
+
+.image-invert {
+  filter: invert(100%);
+}
+.image-grayscale {
+  filter: grayscale(100%);
+}
+.image-hue {
+  filter: hue-rotate(240deg);
+}
+.image-invert {
+  filter: saturate(7);
+}
+
 /* Gunmetal Page */
 .gunmetal {
   --background-color: #2A3439;
@@ -267,7 +282,6 @@ html {
   --border-bg-color: #2A3439;
   background: #2A3439;
 }
-
 
 .gunmetal-text {
   color: #AAA9AD;
