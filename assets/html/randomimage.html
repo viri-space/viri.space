@@ -1,13 +1,9 @@
 <img id="rimage" width="350px" src="https://picsum.photos/350" alt="image">
 
 <script>
-  function randomClass() {
-    var classes = ['1', '2', '3'];
-    document.querySelector('#rimage').removeClass();
-    document.querySelector('#rimage').addClass(function(){ return classes[Math.floor(Math.random() * classes.length)]; });
-  }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    randomClass();
-}, false);
+  (function () {
+    var classes = ['1', '2', '3', '4', '5', '6'];
+    let randomClass = classes[Math.floor(Math.random() * classes.length)];
+    document.querySelector('#rimage').classList.add(randomClass);
+  })();
 </script>
