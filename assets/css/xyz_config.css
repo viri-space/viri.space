@@ -25,8 +25,7 @@
    *  Sizes  *
    ***********/
 
-  --max-width: 400px;
-  --margin-width: 900px;
+  --max-width: 1000px;
 
   /***********
    *  Fonts  *
@@ -84,6 +83,10 @@
 /************
  *  Custom  *
  ************/
+header, footer, main {
+  max-width: 400px;
+}
+
 .logo {
   font-family: orange_kid;
   text-transform: uppercase;
