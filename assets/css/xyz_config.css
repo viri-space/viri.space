@@ -101,7 +101,6 @@ header, footer, main {
 }
 
 .space {
-  background: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
