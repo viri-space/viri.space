@@ -8,6 +8,9 @@
    *  Main Theme  *
    ****************/
 
+  --y-axis-page-align: center;
+  --x-axis-page-align: center;
+
   --primary-color: green;
   --secondary-color: limegreen;
   --tertiary-color: lime;
