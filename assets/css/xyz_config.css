@@ -193,7 +193,8 @@
   color: lime;
   width: 35px;
   height: 35px;
-  border: 3px double;
+  border: var(--border-thickness) var(--border-type) var(--border-color);
+  border-radius: var(--border-radius);
   display: inline-block;
   font-size: 20px;
   line-height: 1.4;
