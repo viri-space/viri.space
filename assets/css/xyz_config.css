@@ -206,7 +206,10 @@
   color: lime;
   border: 0;
 }
-
+#content {
+  height: 350px;
+  justify-content: center;
+}
 
 /* Links */
 #vaynwork {
