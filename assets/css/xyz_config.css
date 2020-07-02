@@ -1,12 +1,7 @@
 @charset 'UTF-8';
 
-/***************
- *  Variables  *
- ***************/
 :root {
-  /****************
-   *  Main Theme  *
-   ****************/
+
 
   --y-axis-page-align: center;
   --x-axis-page-align: center;
@@ -26,28 +21,16 @@
   --border-radius: 0px;
   --border-color: lime;
 
-  /***********
-   *  Sizes  *
-   ***********/
 
   --max-width: 350px;
 
-  /***********
-   *  Fonts  *
-   ***********/
 
   --primary-font: 'EXEPixelPerfect', monospace;
   --secondary-font: 'pcSenior', monospace;
   --header-font: 'orange_kid', monospace;
   --font-size: var(--responsive-font-size);
-  /************
-   *  Images  *
-   ************/
 }
 
-/***************
- *  Font-Face  *
- ***************/
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
 @font-face {
@@ -178,22 +161,25 @@
   }
 }
 
-.space .speech {
-  color: limegreen;
-  max-width: 500px;
-  width: 95%;
-}
-.space .btn {
-  color: limegreen;
-}
 .buttonlist {
   max-width: 500px;
   display: flex;
   justify-content: center;
   text-align: center;
-  font-family: sans-serif;
 }
-.buttonlist a {
+.buttonlist .text {
+  color: lime;
+  flex: 1 1;
+  height: 35px;
+  border: var(--border-thickness) var(--border-type) var(--border-color);
+  border-radius: var(--border-radius);
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 5px;
+  background: black;
+}
+.buttonlist .button {
   color: lime;
   width: 35px;
   height: 35px;
@@ -206,11 +192,12 @@
   background: black;
   transform: scale(1);
   transition: transform .2s;
+  font-family: sans-serif;
 }
-.buttonlist a:hover {
+.buttonlist .button:hover {
   transform: scale(1.2);
 }
-.buttonlist a:active {
+.buttonlist .button:active {
   transform: scale(1.1);
 }
 
