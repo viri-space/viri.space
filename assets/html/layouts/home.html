@@ -2,7 +2,9 @@
   <div style="width: 100%;" class="buttonlist">
     <a class="button" onclick="loadPage('info.html', '#content')">?</a>
     <div class="text">
-      <select id="pageSelect" name="pageSelect" onchange="$q('html-include').setAttribute('src', '/assets/html/includes/' + $q('#pageSelect').value);$q('html-include').connectedCallback();">
+      <select id="pageSelect" name="pageSelect"
+      onchange="$q('html-include').setAttribute('src', '/assets/html/includes/' + $q('#pageSelect').value);
+      $q('html-include').connectedCallback();">
         <option value="info">About</option>
         <option value="tools">Tools</option>
       </select>
