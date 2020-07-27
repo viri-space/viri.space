@@ -147,6 +147,7 @@
   background: transparent;
   color: lime;
   border: 0;
+  width: 90%;
 }
 #content {
   height: 350px;
