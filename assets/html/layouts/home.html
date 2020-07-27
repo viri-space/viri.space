@@ -3,8 +3,7 @@
     <a href="https://data.viri.space" class="button">λ</a>
     <div class="text">
       <select id="pageSelect" name="pageSelect"
-      onchange="$q('html-include').setAttribute('src', '/assets/html/includes/' + $q('#pageSelect').value);
-      $q('html-include').connectedCallback();">
+      onchange="update('html-include')">
         <option value="info">About</option>
         <option value="tools">Tools</option>
         <option value="randomimage">Random Image</option>
@@ -16,7 +15,7 @@
 
 <footer anim="slide-in-top 0.5s">
   <div class="buttonlist">
-    <a class="button" onclick="$q('html-include').setAttribute('src', '/assets/html/includes/randomimage.html');$q('html-include').connectedCallback();">⨇</a>
+    <a class="button">⨇</a>
     <a class="button">⨝</a>
     <div class="text marquee">
       <div>follow me on <a id="twitter" href="https://twitter.com/_viri_">twitter</a> ‖ powered by <zoon-logo></zoon-logo></div>
