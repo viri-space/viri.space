@@ -5,6 +5,7 @@
 
   --y-axis-page-align: center;
   --x-axis-page-align: center;
+  --align-text: center;
 
   --primary-color: green;
   --secondary-color: limegreen;
@@ -25,9 +26,9 @@
   --max-width: 350px;
 
 
-  --primary-font: 'EXEPixelPerfect', monospace;
-  --secondary-font: 'pcSenior', monospace;
-  --header-font: 'orange_kid', monospace;
+  --font-primary: 'EXEPixelPerfect', monospace;
+  --font-secondary: 'pcSenior', monospace;
+  --font-header: 'orange_kid', monospace;
   --font-size: var(--responsive-font-size);
 }
 
