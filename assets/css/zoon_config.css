@@ -8,6 +8,10 @@
   --align-text: center;
 
   --color-text: green;
+  --color-main-1: #222;
+  --color-main-2: darkgrey;
+  --color-main-3: lime;
+  
   --primary-color: green;
   --secondary-color: limegreen;
   --tertiary-color: lime;
@@ -23,9 +27,7 @@
   --border-radius: 0px;
   --border-color: lime;
 
-
   --max-width: 350px;
-
 
   --font-primary: 'EXEPixelPerfect', monospace;
   --font-secondary: 'pcSenior', monospace;
