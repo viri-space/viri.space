@@ -69,15 +69,6 @@
   border: var(--border-thickness) var(--border-type) var(--border-color);
   margin: 5px;
 }
-.vstitle {
-  color: limegreen;
-  margin: 0 5px;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
-}
 
 .buttonlist {
   max-width: 500px;
