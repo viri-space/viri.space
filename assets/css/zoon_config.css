@@ -62,7 +62,9 @@
   -webkit-box-shadow: 0px 0px 50px 5px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 50px 5px rgba(0,0,0,1);
 }
-
+.space-evenly {
+  justify-content: space-evenly;
+}
 .imgBorder {
   border: var(--border-thickness) var(--border-type) var(--border-color);
   margin: 5px;
