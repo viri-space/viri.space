@@ -151,3 +151,12 @@
 .image-invert {
   filter: saturate(7);
 }
+btn {
+  color: #4dd97a;
+  background: black;
+  display: inline-block;
+  margin: var(--margin);
+  padding: 5px;
+  flex: 1 1;
+  border: lime 4px double;
+}
