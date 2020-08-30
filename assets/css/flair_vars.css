@@ -151,7 +151,7 @@
 .image-invert {
   filter: saturate(7);
 }
-btn {
+.btn {
   color: #4dd97a;
   background: black;
   display: inline-block;
