@@ -59,9 +59,6 @@
   border: lime 4px double;
 }
 
-.space-evenly {
-  justify-content: space-evenly;
-}
 .imgBorder {
   border: var(--border-thickness) var(--border-type) var(--border-color);
   margin: 5px;
