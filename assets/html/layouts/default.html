@@ -1,15 +1,28 @@
-<header class="row space-between">
-  <p onclick="loadPage('/pages/randomimage.html', '#content')" class="vstitle">viri.space</p>
-  <div class="buttonlist">
-    <a onclick="loadPage('/pages/info.html', '#content')" href="#">?</a>
-    <a onclick="loadPage('/pages/lists.html', '#content')" href="#">⁂</a>
-    <a onclick="loadPage('/pages/recs.html', '#content')" href="#">Ⅳ</a>
+<header class="column" anim="slide-in-bottom dur:1s">
+  <div class="row space-evenly w:100%">
+    <a href="https://hexOS.viri.space" class="btn">Hexos</a>
+    <a href="https://data.viri.space" class="btn">Data</a>
+  </div>
+  <div class="buttonlist w:100%">
+    <div class="vs">
+      <select id="pageSelect" name="pageSelect" onchange="z.update('#content-element', '/pages/')">
+        <option value="info">About</option>
+        <option value="tools">Tools</option>
+        <option value="randomimage">Random Image</option>
+        <option value="turtle">Turtle</option>
+      </select>
+    </div>
   </div>
 </header>
 
-<main>
-</main>
-
-<aside>
-  <img height="60px">
-</aside>
+<footer anim="slide-in-top dur:1s">
+  <div class="buttonlist">
+    <div class="text marquee">
+      <div>follow me on <a id="twitter" href="https://twitter.com/_viri_">twitter</a> for funny tweets</div>
+    </div>
+  </div>
+  <div class="row space-evenly">
+    <z-clock class="vs"></z-clock>
+    <z-time class="vs" year="numeric" month="numeric" day="numeric"></z-time>
+  </div>
+</footer>
