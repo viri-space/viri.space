@@ -79,7 +79,7 @@
   display: inline-block;
   font-size: 20px;
   line-height: 1.4;
-  margin: 0 5px;
+  margin: var(--margin);
   background: black;
 }
 .buttonlist .button {
