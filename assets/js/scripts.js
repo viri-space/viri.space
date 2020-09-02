@@ -1,4 +1,4 @@
-var titles = ['watch your head', 'ok', 'stay hydrated', 'be nice', 'aim high', 'keep on keeping on', 'now this is epic', 'funny title', ':)']
+var titles = ['watch your head', 'ok', 'stay hydrated', 'be nice', 'aim high', 'keep on keeping on', 'now this is epic', 'funny title', ':)', 'back to reality']
 var title = titles[Math.floor(Math.random() * titles.length)] + ' - viri' // pick random item
 document.title = title
 
