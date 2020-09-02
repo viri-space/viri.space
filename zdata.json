@@ -4,5 +4,6 @@
   "config": "/",
   "files": "assets",
   "theme": "hacker",
-  "project_count": 6
+  "project_count": 6,
+  "layout": "0"
 }
