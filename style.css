@@ -40,14 +40,14 @@
   font-family: 'pcSenior';
   src:
     local('PC Senior'),
-    url('/assets/fonts/pcsenior.ttf') format('truetype');
+    url('/fonts/pcsenior.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'EXEPixelPerfect';
   src:
     local('EXEPixelPerfect'),
-    url('/assets/fonts/EXEPixelPerfect.ttf') format('truetype');
+    url('/fonts/EXEPixelPerfect.ttf') format('truetype');
 }
 
 .vs {
