@@ -2,7 +2,7 @@
   "short_name": "viri.space",
   "name": "viri.space",
   "icons": [{
-    "src": "favicon.png",
+    "src": "icon.png",
     "type": "image/png",
     "sizes": "192x192"
   }],
