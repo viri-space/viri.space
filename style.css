@@ -1,8 +1,6 @@
 @charset 'UTF-8';
 
 :root {
-
-
   --y-axis-page-align: center;
   --x-axis-page-align: center;
   --align-text: center;
@@ -48,6 +46,10 @@
   src:
     local('EXEPixelPerfect'),
     url('/fonts/EXEPixelPerfect.ttf') format('truetype');
+}
+
+.con {
+  background: black;
 }
 
 .vs {
