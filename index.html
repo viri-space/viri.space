@@ -20,18 +20,16 @@
 </head>
 
 <html>
-
-<body>
-  <z-sm>
-    <z-frame src="/frames/" frame="default"></z-frame>
-  </z-sm>
-  <canvas id="canvas"></canvas>
-  <main anim="slide-in-back dur:.5s" style="min-height: 354px;">
-    <section class="con p:0" id="content">
-      <z-html id="content-element" src="/pages/info"></z-html>
-    </section>
-  </main>
-  <script src="/scripts.js"></script>
-</body>
-
+  <body class="use-layout center">
+    <z-sm>
+      <z-frame src="/frames/" frame="default"></z-frame>
+    </z-sm>
+    <canvas id="canvas"></canvas>
+    <main anim="slide-in-back dur:.5s" style="min-height: 354px;">
+      <section class="con p:0" id="content">
+        <z-html id="content-element" src="/pages/info"></z-html>
+      </section>
+    </main>
+    <script src="/scripts.js"></script>
+  </body>
 </html>
