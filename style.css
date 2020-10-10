@@ -172,3 +172,17 @@
   flex: 1 1;
   border: lime 4px double;
 }
+
+/* Center */
+.use-layout.center {
+  grid-template-areas:
+          ". .  ."
+          ". hd ."
+          ". nv ."
+          ". mn ."
+          ". ft ."
+          ". .  .";
+  grid-template-columns: auto min(var(--max-width), 100%) auto;
+  grid-template-rows: auto min-content min-content min-content min-content auto;
+  place-items: center;
+}
