@@ -1,12 +1,7 @@
 <header class="column" anim="slide_in_bottom dur:1">
-  <!-- <div class="row space-evenly w-full">
-    <a href="https://hexOS.viri.space" class="btn" style="flex: 1 1 40%">Hexos</a>
-    <a href="https://data.viri.space" class="btn" style="flex: 1 1 40%">Data</a>
-    <a href="https://blog.viri.space" class="btn" style="flex: 1 1 40%">Blog</a>
-  </div> -->
   <div class="buttonlist w-full">
     <div class="vs">
-      <select id="pageSelect" name="pageSelect" onchange="z.update('#content-element', '/pages/')">
+      <select id="pageSelect" name="pageSelect">
         <option value="info">Home</option>
         <option value="tools">Tools</option>
         <option value="randomimage">Random Image</option>
@@ -20,12 +15,12 @@
   <section class="container p-0" id="content">
     <z-html-path id="content-element" src="/pages"></z-html-path>
   </section>
+  <div class="container p-5" style="font-size:2rem;">
+    <div>follow me on <a id="twitter" href="https://twitter.com/_viri_">twitter</a> for more updates</div>
+  </div>
 </main>
 
 <footer anim="slide_in_top dur:1">
-  <div class="container marquee p-5" style="font-size:2rem;">
-    <div>follow me on <a id="twitter" href="https://twitter.com/_viri_">twitter</a> for more updates</div>
-  </div>
   <div class="group row space-evenly">
     <z-clock class="vs"></z-clock>
     <z-time class="vs" year="numeric" month="numeric" day="numeric"></z-time>
