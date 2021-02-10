@@ -19,8 +19,8 @@
 
   --background: transparent;
 
-  --border-type: single;
-  --border-thickness: 4px;
+  --border-type: solid;
+  --border-thickness: 2px;
   --border-radius: 0px;
   --border-color: lime;
 
@@ -59,7 +59,7 @@
   margin: var(--margin);
   padding: 5px;
   flex: 1 1;
-  border: lime 4px double;
+  border: var(--border-thickness) var(--border-type) var(--border-color);
 }
 
 .imgBorder {
