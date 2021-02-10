@@ -29,8 +29,8 @@
 
   --font-size: 150%;
   --font-primary: 'EXEPixelPerfect', monospace;
-  --font-secondary: 'pcSenior', monospace;
-  --font-header: 'orange_kid', monospace;
+  --font-secondary: 'EXEPixelPerfect', monospace;
+  --font-header: 'EXEPixelPerfect', monospace;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
