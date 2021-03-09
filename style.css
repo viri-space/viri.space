@@ -9,7 +9,8 @@
   --color-main-1: #222;
   --color-main-2: darkgrey;
   --color-main-3: lime;
-
+  --color-accent-1: #4dd041;
+  
   --primary-color: green;
   --secondary-color: limegreen;
   --tertiary-color: lime;
@@ -17,7 +18,7 @@
   --background-border-color: transparent;
   --border-bg-color: black;
   --selection-background: #348830;
-  
+
   --background: transparent;
 
   --border-type: solid;
